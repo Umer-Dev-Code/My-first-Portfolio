@@ -1,42 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure CSS Image Slider</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./download.jpeg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umer Memon | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="https://placehold.co/16x16/000000/FFFFFF?text=UM" type="image/png" sizes="16x16" />
+  <link rel="stylesheet" href="style.css">
+  <!-- Spline Viewer Script -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.26/build/spline-viewer.js"></script>
+  <!-- Three.js Library (kept for potential future use or if other Three.js elements are desired) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo">Umer</a>
-        <nav>
-            <a href="./index.html" class="active">Home</a>
-            <a href="#about">About me</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
+  <header>
+    <button id="mobile-menu-button" class="mobile-nav-toggle" aria-label="Toggle menu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <a href="#home" class="logo">UMER</a>
+    <nav>
+      <ul id="primary-navigation">
+        <li><a href="#home" class="active-link">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#behance-brothers">Brand</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Umer Memon</h1>
+          <p class="typing-text">I'm Umer, a <span class="animated-text"></span> from Karachi. I love creating clean, responsive websites using HTML, CSS, and
+            JavaScript. I'm always exploring new tools and designs to improve my skills and build modern, user-friendly
+            web experiences.</p>
+          <div class="button-container">
+            <a href="https://www.linkedin.com/in/umer-yt-30610236a/" class="download-button" target="_blank"
+              rel="noopener noreferrer">Hire me</a>
+            <a href="https://placehold.co/200x50/000000/FFFFFF?text=Resume" class="download-button" download>Download Resume</a>
+          </div>
         </div>
-        <div class="home-content">
-            <h1>Hi,it's <span>Umer</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima consequuntur iste eum alias. Vero,
-                quibusdam! Repudiandae pariatur deserunt sequi, omnis ab animi quaerat molestiae velit accusamus ea
-                dolores dicta!</p>
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="#" class="btn">Hire me</a>
+        <div class="hero-image-container">
+          <!-- Spline Robot will be placed here -->
+          <spline-viewer url="https://prod.spline.design/1a4lmCTHv13Tu4lF/scene.splinecode"></spline-viewer>
         </div>
+      </div>
     </section>
-</body>
-</html>
+
+    <section id="projects" class="portfolio-projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=DilseBuy" alt="DilseBuy e-commerce website interface" loading="lazy" />
+            <div class="project-content">
+              <h3>DilseBuy</h3>
+              <p>An e-commerce interface inspired by modern design. Clean layout built with HTML & CSS.</p>
+              <a href="https://dilsebuy.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">View
+                Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Calculator" alt="Interactive calculator application" loading="lazy" />
+            <div class="project-content">
+              <h3>Calculator</h3>
+              <p>Responsive calculator for basic operations using HTML, CSS & JavaScript.</p>
+              <a href="https://calculatorbyumer.netlify.app" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Quiz+App" alt="Interactive quiz application interface" loading="lazy" />
+            <div class="project-content">
+              <h3>Quiz App</h3>
+              <p>Interactive quiz app with JavaScript logic for user interaction.</p>
+              <a href="https://quizzappbyumer.netlify.app" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Car+Website" alt="Car showcase website design" loading="lazy" />
+            <div class="project-content">
+              <h3>Car Website</h3>
+              <p>Explore car designs, specs, and reviews in this car showcase site.</p>
+              <a href="https://carexperts.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Starbucks+Clone" alt="CSS-styled chess board" loading="lazy" />
+            <div class="project-content">
+              <h3>Star Bucks Clone by UMER</h3>
+              <p>Pure HTML and CSS Starbucks clone, styled to perfection force practice.</p>
+              <a href="https://starcoffee-by-umer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=FB+Login+Page" alt="Facebook login page clone" loading="lazy" />
+            <div class="project-content">
+              <h3>FB Login Page</h3>
+              <p>Responsive clone of the Facebook login page. Educational purpose only.</p>
+              <a href="https://fbloginpageclonebyumer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=First+Portfolio" alt="First portfolio website design" loading="lazy" />
+            <div class="project-content">
+              <h3>First Portfolio</h3>
+              <p>My original portfolio showcasing beginner-level design and structure.</p>
+              <a href="https://amongusbyumer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Chess+Board" alt="CSS-styled chess board" loading="lazy" />
+            <div class="project-content">
+              <h3>Chess Board</h3>
+              <p>Pure HTML and CSS chessboard, styled to perfection for practice.</p>
+              <a href="https://chessbyumer.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://placehold.co/400x250/333333/FFFFFF?text=Gym+Login" alt="Gym fitness app login interface" loading="lazy" />
+            <div class="project-content">
+              <h3>Gym Login Page</h3>
+              <p>Login UI for fitness apps, simple and effective.</p>
+              <a href="https://fitnesst.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="behance-brothers" class="portfolio-projects">
+      <div class="container">
+        <h2>Behance Brothers</h2>
+        <p>A creative design team co-founded by <strong>Umer</strong> & <strong>Hammad</strong>. We craft modern logos,
+          posters, thumbnails & branding kits.</p>
+        <div class="projects-grid">
+          <div class="project-item">
+            <h3>Logo Design</h3>
+            <p>3D, futuristic, and minimal logos for brands and creators.</p>
+          </div>
+          <div class="project-item">
+            <h3>Posters & Flyers</h3>
+            <p>Social media & event graphics with style and impact.</p>
+          </div>
+          <div class="project-item">
+            <h3>YouTube Thumbnails</h3>
+            <p>Custom thumbnails to boost engagement & clicks.</p>
+          </div>
+          <div class="project-item">
+            <h3>Branding Kits</h3>
+            <p>Full identity kits with logos, fonts, and color systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm Umer, a passionate web developer from Karachi. My expertise lies in creating clean, responsive, and
+              user-friendly websites using modern web technologies like HTML, CSS, and JavaScript. I am constantly
+              exploring new tools and design trends to enhance my skills and deliver exceptional web experiences.
+            </p>
+            <p>
+              My goal is to build digital products that are not only visually appealing but also highly functional and
+              intuitive. Let's create something amazing together.
+            </p>
+          </div>
+          <div class="about-image">
+            <!-- Spline 3D Car Model -->
+            <spline-viewer url="https://prod.spline.design/c-pOBBZdOtEn93ud/scene.splinecode"></spline-viewer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations or web development projects!</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:umery101@gmail.com">umery101@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Phone</h3>
+            <a href="https://wa.me/923161395147">+92-3161395147</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Portfolio</h3>
+            <a href="https://aspect-tech.netlify.app/" target="_blank"
+              rel="noopener noreferrer">aspect-tech.netlify.app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3 class="footer-logo">umer.dev</h3>
+            <p>A passionate web developer creating modern and responsive web experiences. Let's build something amazing
+              together.</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#behance-brothers">Brand</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/Unknownmemon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://web.facebook.com/umer.memon.974981" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/umer-yt-8932b1315/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Umer Dev. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const mobileNavButton = document.getElementById('mobile-menu-button');
+        const primaryNavigation = document.getElementById('primary-navigation');
+
+        // Check if both elements exist before adding event listeners
+        if (mobileNavButton && primaryNavigation) {
+          mobileNavButton.addEventListener('click', function () {
+            // Toggle the 'active' class on the navigation to show/hide it
+            const isExpanded = primaryNavigation.classList.contains('active');
+            primaryNavigation.classList.toggle('active');
+            // Update aria-expanded for accessibility
+            mobileNavButton.setAttribute('aria-expanded', !isExpanded);
+
+            // Toggle icon between bars (menu closed) and times (menu open)
+            const icon = mobileNavButton.querySelector('i');
+            if (isExpanded) {
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            } else {
+              icon.classList.remove('fa-bars');
+              icon.classList.add('fa-times');
+            }
+          });
+
+          // Close nav when a navigation link is clicked (for single-page navigation)
+          primaryNavigation.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+              primaryNavigation.classList.remove('active'); // Hide the navigation
+              mobileNavButton.setAttribute('aria-expanded', 'false'); // Reset aria-expanded
+              // Reset icon to bars
+              const icon = mobileNavButton.querySelector('i');
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            });
+          });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              // Scroll to the target element with a smooth animation
+              // Offset by 80px to account for the fixed header
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+
+              // Update active link in navigation
+              document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active-link'); // Remove active from all links
+              });
+              this.classList.add('active-link'); // Add active to the clicked link
+            }
+          });
+        });
+
+        // Highlight active section in navigation based on scroll position
+        window.addEventListener('scroll', function () {
+          const scrollPosition = window.scrollY + 100; // Add offset for fixed header
+
+          document.querySelectorAll('section').forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            // Check if current scroll position is within the section
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+              document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active-link'); // Remove active from all links
+                // Add active class to the link corresponding to the current section
+                if (link.getAttribute('href') === `#${sectionId}`) {
+                  link.classList.add('active-link');
+                }
+              });
+            }
+          });
+        });
+
+        // Initialize active link on page load
+        // Checks if there's a hash in the URL (e.g., #about)
+        const currentHash = window.location.hash;
+        if (currentHash) {
+          const activeLink = document.querySelector(`nav a[href="${currentHash}"]`);
+          if (activeLink) {
+            document.querySelectorAll('nav a').forEach(link => {
+              link.classList.remove('active-link');
+            });
+            activeLink.classList.add('active-link');
+          }
+        } else {
+          // If no hash, default to 'Home' as active
+          document.querySelector('nav a[href="#home"]').classList.add('active-link');
+        }
+
+        // Typing text animation for the hero section
+        const textElement = document.querySelector('.animated-text');
+        const words = ["Web Developer", "Software Engineer", "UI/UX Designer", "Freelancer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+          const currentWord = words[wordIndex];
+          // Determine text to display: either typing or deleting
+          const displayText = isDeleting
+            ? currentWord.substring(0, charIndex - 1)
+            : currentWord.substring(0, charIndex + 1);
+
+          textElement.textContent = displayText;
+
+          // Typing logic
+          if (!isDeleting && charIndex < currentWord.length) {
+            charIndex++;
+            setTimeout(type, 100); // Speed of typing
+          }
+          // Deleting logic
+          else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(type, 50); // Speed of deleting
+          }
+          // Switch between typing and deleting, and move to next word
+          else {
+            isDeleting = !isDeleting;
+            wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+            setTimeout(type, 1000); // Pause before next action
+          }
+        }
+        type(); // Start the typing animation when the page loads
+      });
+    </script>
+  </body>
+
+  </html>
