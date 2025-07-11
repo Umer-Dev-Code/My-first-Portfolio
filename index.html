@@ -261,7 +261,6 @@
           const isExpanded = primaryNavigation.classList.contains('active');
           primaryNavigation.classList.toggle('active');
           mobileNavButton.setAttribute('aria-expanded', !isExpanded);
-          
           // Toggle icon between bars and times
           const icon = mobileNavButton.querySelector('i');
           if (isExpanded) {
